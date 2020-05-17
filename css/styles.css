@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center ;
     min-height: 100vh;
+    flex-direction: row;
 }
 
 .userCard {
@@ -28,14 +29,12 @@ body{
     width: var(--user-card-width);
     height: 100px;
     background: #56506f;
-    /*margin-bottom: -75px;*/
 
 }
 .userCardCenter {
     width: var(--user-card-width);
     height: 100px;
     background: #f2f2f2;
-    /*margin-bottom: -75px;*/
 
 }
 .userImageContainer {
@@ -53,12 +52,14 @@ body{
 
 
 
+
 }
 .userImageContainer > img {
-    height: inherit;
-    width: inherit;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
-    border-radius: 50%;
+
+
 
 }
 
@@ -67,6 +68,9 @@ body{
     background: #f2f2f2;
     font-family: sans-serif;
     height: 175px;
+    box-sizing: border-box;
+    border-bottom: 2px #b9b9b9 solid;
+
 
 
 
@@ -88,16 +92,57 @@ body{
 .userInfoContainer > p {
 
 padding: 10px;
+    padding-top: 20px;
     text-align: center;
     font-weight: bold;
     font-size: 12px;
 
 }
 .userCardFooter {
+    display: flex;
     width: var(--user-card-width);
     background: #f2f2f2;
     height: 50px;
+    box-sizing: border-box;
+    flex-direction: row;
+
+
+}
+.halfFooterLeft {
+    display: inline-block;
+    width: 50%;
+    background: #f2f2f2;
+    padding-top: 5px;
+    height: 50px;
+    box-sizing: border-box;
+    border-right: 1px #b9b9b9 solid;
+}
+.halfFooterRight {
+    display: inline-block;
+    width: 50%;
+    background: #f2f2f2;
+    padding-top: 5px;
+
+    height: 50px;
+    box-sizing: border-box;
+    border-left: 1px #b9b9b9 solid;
+
 }
 .imageFooter {
-    display: inline;
+    background: #f2f2f2;
+    display: block;
+    align-self:center;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+
 }
+.imageFooter > img {
+      display: block;
+    margin: 0 auto;
+    opacity: 0.30;
+
+}
+
