@@ -1,0 +1,71 @@
+@import "reset.css";
+
+html {
+    --user-card-height: 400px;
+    --user-card-width: 250px;
+}
+body{
+    background: #82988a;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    min-height: 100vh;
+}
+
+.userCard {
+    height: var(--user-card-height);
+    width: var(--user-card-width);
+    border-radius: 14px;
+    overflow: hidden;
+
+}
+
+.userCard > * {
+    display: block;
+}
+.userCardHeader {
+    width: var(--user-card-width);
+    height: 100px;
+    background: #56506f;
+    /*margin-bottom: -75px;*/
+
+}
+.userCardCenter {
+    width: var(--user-card-width);
+    height: 100px;
+    background: #f2f2f2;
+    /*margin-bottom: -75px;*/
+
+}
+.userImageContainer {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -175px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.userImageContainer > img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.userInfoContainer {
+    width: var(--user-card-width);
+    background: #f2f2f2;
+
+
+}
+.userFullName {
+    align-self: center;
+}
+.userCardFooter {
+    width: var(--user-card-width);
+    background: #f2f2f2;
+}
